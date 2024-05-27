@@ -99,7 +99,7 @@ fn generate_csv(nodes: Vec<Color>) -> anyhow::Result<String> {
 fn generate_xml(nodes: Vec<Color>) -> anyhow::Result<String> {
     let mut buf = String::new();
 
-    writeln!(buf, r#""<?xml version="1.0" encoding="UTF-8"?>""#)?;
+    writeln!(buf, "<?xml version=\"1.0\" encoding=\"UTF-8\"?>")?;
     writeln!(buf, "<colors>")?;
 
     for color in nodes {
