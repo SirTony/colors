@@ -1,0 +1,13 @@
+[package]
+name = "colors"
+version = "1.0.0"
+edition = "2021"
+description = "A simple CLI tool to scrape known color names and their RGB values from the Wikipedia."
+
+[dependencies]
+anyhow = "1.0.86"
+clap = { version = "4.5.4", features = ["derive", "env"] }
+regex = "1.10.4"
+reqwest = "0.12.4"
+scraper = "0.19.0"
+tokio = { version = "1.37.0", features = ["full"] }
